@@ -1,0 +1,5 @@
+com\candidjava\spring\bean\User.class
+com\candidjava\spring\controller\UserController.class
+com\candidjava\spring\service\UserService.class
+com\candidjava\Application.class
+com\candidjava\spring\service\UserServiceImp.class
