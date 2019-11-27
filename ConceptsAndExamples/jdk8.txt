@@ -1,0 +1,36 @@
+Prerequisites: Core Java Concepts
+
+Java 8 Features
+#1. Lambda Expression
+zero, one or more parameters
+single statements
+multi statements
+
+#2. Default Methods
+#3. Functional Interface
+#. Method reference
+#4. Streams
+a) Creation of Streams
+b) Operations on Streams
+#5. forEach
+#6. Comparator
+#7. Base64 encrypt decrypt feature
+#8. Optionals
+#9. Date Time, java.time.LocalDate, LocalTime
+#10. JOin Array, Strings
+used to process the data
+#11. Predicate
+#12. Script Engine Nashorn
+
+Problem with Old Date & Time:
+java.util.Date is poorly understood by developers. It’s been badly abused by library authors, adding further to the confusion. A Date instance represents an instant in time, not a date. Importantly, that means:
+
+It doesn’t have a time zone.
+It doesn’t have a format.
+It doesn’t have a calendar system.
+Some other problems are:
+
+It rates years as two digits since 1900. There are many workarounds in the Java world around this banal design decision, like handling years before 1900.
+Months are zero indexed (0 – January, 11 – December). Not very intuitive and led to many off-by-one errors.
+All classes in this old API are mutable. As a result, any time you want to give a date back (say, as an instance structure) you need to return a clone of that date instead of the date object itself (since otherwise, people can mutate your structure). Date formatting classes are also not thread safe. You have to always take care about that or it could lead to some unexpected behaviors.
+Date comparison is not upto the mark
